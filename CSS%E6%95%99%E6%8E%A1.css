@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-contents {
+  background-image:url(https://www.pakutaso.com/shared/img/thumb/OJS_sekitokokuban_TP_V.jpg);
+  background-size:cover;
+  height:700px;
+  padding:20px 5px 20px 5px;
+}
+
+.about-genba {
+ font-size:30px;
+ color:crimson;
+ margin:20px 30px 20px 30px;
+
+}
+
+
+.about-kyosai {
+    font-size:50px;
+    text-align:center;
+    margin:100px 320px 100px 320px;
+    padding:100px 320px 10px 320px;
+    color:blue;
+ }
+
+.timer {
+    font-size:60px;
+        margin:0px 320px 0px 320px;
+    padding:0px 320px 0px 320px;
+    text-align:center;
+    color:blue;
+}
+
+.main-wrapper{
+ text-align: center;
+}
+
+.lesson:hover {
+    background-color:blue;
+}
+.school:hover {
+    background-color:blue;
+}
+.lesson {
+    font-size:30px;
+    background-color:aqua;
+   
+}
+
+.school {
+    font-size:30px;
+    background-color:gold;
+    
+}
+
+footer {
+     text-align: center;
+}
+
+.btn {
+    padding:8px 24px 8px 24px;
+    color:black;
+    display:inline-block;
+    opacity: 0.8;
+    box-shadow: :10px 10px black;
+    text-align:center;
+}
+
+.btn:active {
+    background-color:crimson;
+    position:relative;
+    top:6px;
+    box-shadow: none;
+}
+
+.monkasho {
+    background-color:fuchsia;
+}
+
+.gakushusido {
+    background-color:forestgreen;
+}
+
+.kyouikuiin {
+    background-color:lightcoral;
+}
+
+
+
+
+
