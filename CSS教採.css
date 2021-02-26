@@ -92,7 +92,15 @@ footer {
     background-color:lightcoral;
 }
 
-
+@media(max-width:670){
+  .about-kyosai{
+    font-size:30px;
+  }
+  .timer{
+    fontsize:30px;
+  }
+}
+  
 
 
 
