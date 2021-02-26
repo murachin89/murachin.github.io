@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>教採</title>
+<link rel="stylesheet" href="CSS%E6%95%99%E6%8E%A1.css">
+<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <div class="container">
+    <div class="header-contents">
+        <p class="about-genba">教育現場に立つ君たちへ</p>
+        <p class="about-kyosai">教員採用試験試験まであと</p>
+        <p class="timer"><span id ="day"></span>日<span id="hour"></span>時間<span id ="min"></span>分<span id="sec">秒</span></p>
+        
+    </div>
+  </div>
+<!-- /.header-contents -->
+     
+ </header>
+  <div class="main-wrapper">
+    <div class="container">  
+     <a href="https://www.youtube.com/watch?v=rWxoj0LlG7s" class="lesson"><span class="fas fa-school"></span>一次試験対策</a>   
+     <a href="javascript:confirm('有益な情報はありませんでした・・・')" class="school"><span class="fas fa-chalkboard-teacher"></span>二次試験対策</a>
+    </div>  
+      
+    
+       
+       
+
+  </div><!-- /.main-wrapper -->
+ <footer>
+  <div class="container">
+    <a href="https://www.mext.go.jp/" class="btn monkasho">文部科学省</a>
+    <a href="https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm" class="btn gakushusido">学習指導要領</a>
+    <a href="https://www.pref.yamaguchi.lg.jp/cms/a50100/y-edu/y-edu-top.html" class="btn kyouikuiin">山口県教育委員会</a>
+  </div>
+    
+ </footer>
+  
+ <script>
+ 'use strict';
+ 
+ function countdown(due) {
+     const now = new Date();
+     
+     const rest =due.getTime()- now.getTime();
+     const sec = Math.floor(rest/1000)%60;
+     const min = Math.floor(rest/1000/60)%60;
+     const hours = Math.floor(rest/1000/60/60)%24;
+     const days = Math.floor(rest/1000/60/60/24);
+     const count =[days,hours,min,sec];
+     
+     return count;
+ }
+    const goal =new Date(2021,7,11);
+    
+    function recalc() {
+        const counter= countdown(goal);
+        document.getElementById('day').textContent=counter[0];
+        document.getElementById('hour').textContent=counter[1];
+        document.getElementById('min').textContent=String(counter[2]).padStart(2,'0');
+        document.getElementById('sec').textContent=String(counter[3]).padStart(2,'0');
+        refresh();
+    }
+     function refresh() {
+         setTimeout(recalc,1000);
+     }
+    
+     recalc();
+     
+     
+ </script>
+
+    
+ </body>
+</html>
