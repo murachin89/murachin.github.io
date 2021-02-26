@@ -8,7 +8,7 @@ a {
 }
 
 .header-contents {
-  background-image:url(https://raw.githubusercontent.com/murachin89/murachin.github.io/main/%E6%95%99%E5%AE%A4.jpg);
+  background-image:url("https://raw.githubusercontent.com/murachin89/murachin.github.io/main/%E6%95%99%E5%AE%A4.jpg");
   background-size:cover;
   height:700px;
   padding:20px 5px 20px 5px;
